@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Ferronato - portfolio</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+	<div class="container">
+
+	<div class="red" id="bloque">		
+	</div>
+	<h1 class="logo" id="logo"><span class="resp" id="resp">JULIÁN</span> FERRONATO</h1>
+	<h2 class="text1" id="text">web design <span class="punto">.</span></h2>
+	<h2 class="text2" id="text2">design</h2>
+	<div class="descriptioncont" id="descr">
+		<p class="description" >
+		Graphic and Web designer. <br>
+		HTML5, CSS3, Javascript + VueJS. <br>
+		Responsive design, Web animations. <br>
+		Adobe Photoshop + Illustrator.
+		</p>
+		<a href="https://www.facebook.com/julian.ferronato"><img src="boton-del-logo-de-facebook.png" alt="fb" class="fb"></a>
+		<a href="https://twitter.com/julianferronato"><img src="boton-de-logo-del-twitter.png" alt="twitter" class="twitter"></a>
+		<a href="https://www.instagram.com/ferronatojulian/"><img src="logo-de-instagram.png" alt="insta" class="insta"></a>
+	</div>
+
+	<h3 class="text1 port" id="port">portfolio <span class="punto white">.</span></h3>
+	
+	</div>
+
+	<div class="portfolio" id="portafolio">
+		<div class="proyecto" id="pro1">
+			<a href="https://julianferro.github.io/EncodedConference/"><img src="proyect1.png" alt="encoded" class="img-proyect"></a>
+			<div class="cont-desproyect">
+				<h4>Encoded conference</h4>
+				<p>fake proyect. html5, css3, javascript <br>
+				Ilustraciones propias en Adobe Illustrator <br>
+				CSS3 animations, Lazy loading, full responsive.
+				</p>
+			</div>
+		</div>
+		<div class="proyecto2" id="pro2">
+			<a href="https://julianferro.github.io/SiteColor-portfolio/"><img src="proyect2.png" alt="encoded" class="img-proyect"></a>
+			<div class="cont-desproyect">
+				<h4>Agency portfolio</h4>
+				<p>fake proyect. html5, css3, javascript. <br>
+				Flexbox, fixed navbar, image parallax, full responsive.</p>
+			</div>
+		</div>
+		<div class="proyecto3" id="pro3">
+			<a href="https://julianferro.github.io/Clothing-brand/"><img src="proyect3.png" alt="encoded" class="img-proyect"></a>
+			<div class="cont-desproyect">
+				<h4>Clothing brand</h4>
+				<p>fake proyect. html5, css3, Jquery. <br>
+				Flexbox, CSS Grid, Full page, full responsive.</p>
+			</div>
+		</div>
+		<div class="proyecto4" id="pro4">
+			<a href="https://julianferro.github.io/invieguittars/"><img src="proyect4.png" alt="encoded" class="img-proyect"></a>
+			<div class="cont-desproyect">
+				<h4>Hipster guittars</h4>
+				<p>fake proyect. html5, css3, javascript. <br>
+				Flexbox, full responsive, burger button. <br>
+				Lazy loading, hammer.js.</p>
+			</div>
+		</div>
+		<div class="proyecto5" id="pro5">
+			<a href="https://julianferro.github.io/Photographer-portfolio/"><img src="proyect5.png" alt="encoded" class="img-proyect"></a>
+			<div class="cont-desproyect">
+				<h4>Photographer's portfolio</h4>
+				<p>html5, css3, jquery. <br>
+				Flexbox, full responsive, mixitup.js <br>
+				Lightbox, slider gallery.</p>
+			</div>
+		</div>
+		<div class="proyecto6" id="pro6">
+			<a href="https://julianferro.github.io/CSSgrid-portfolio/"><img src="proyect6.png" alt="encoded" class="img-proyect"></a>
+			<div class="cont-desproyect">
+				<h4>Architecture agency</h4>
+				<p>html5, css3, jquery. <br>
+				Flexbox, CSS Grid, Full page, full responsive</p>
+			</div>
+		</div>
+	</div>
+		<footer id="footerr">
+				<h1 class="logo up blanco" id="logo">JULIÁN FERRONATO</h1>
+			<div class="caja">
+			</div>
+			<p class="contact">contact: julian.ferronato@hotmail.com</p>
+		<div class="descriptioncont hola" id="descr2">
+		<p class="description dosresp" >
+		Graphic and Web designer. <br>
+		HTML5, CSS3, Javascript + VueJS. <br>
+		Responsive design, Web animations. <br>
+		Adobe Photoshop + Illustrator.
+		</p>
+		<a href="https://www.facebook.com/julian.ferronato"><img src="boton-del-logo-de-facebook.png" alt="fb" class="fb"></a>
+		<a href="https://twitter.com/julianferronato"><img src="boton-de-logo-del-twitter.png" alt="twitter" class="twitter"></a>
+		<a href="https://www.instagram.com/ferronatojulian/"><img src="logo-de-instagram.png" alt="insta" class="insta"></a>
+	</div>
+		</footer>
+	<script>
+
+	var lastScrollTop = 0;
+	let $company3 = document.getElementById('bloque');
+	let $text = document.getElementById('text');
+	let $text2 = document.getElementById('text2');
+	let $logo = document.getElementById('logo');
+	let $descr = document.getElementById('descr');
+	let $descr2 = document.getElementById('descr2');
+	let $port = document.getElementById('port');
+	let $portafolio = document.getElementById('portafolio');
+	let $proyect1 = document.getElementById('pro1');
+	let $proyect2 = document.getElementById('pro2');
+	let $proyect3 = document.getElementById('pro3');
+	let $proyect4 = document.getElementById('pro4');
+	let $proyect5 = document.getElementById('pro5');
+	let $proyect6 = document.getElementById('pro6');
+	let $footer = document.getElementById('footerr');
+	let $resp = document.getElementById('resp')
+	window.onscroll = function (){
+    // Obtenemos la posicion del scroll en pantall
+    var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+    // Realizamos alguna accion cuando el scroll este entre la posicion 300 y 400
+	    if(scroll > 0 && scroll < 5){
+	        $company3.classList.add('blue')
+  			$text.classList.add('mov')
+  			$logo.classList.add('up')
+  			$text2.classList.add('mov')
+  			$descr.classList.add('reveal')
+  			$resp.classList.add('blue')
+	    }
+	    else if(scroll <= 0){
+	    	$company3.classList.remove('blue')
+	        $text.classList.remove('mov')
+	        $logo.classList.remove('up')
+	        $text2.classList.remove('mov')
+	        $descr.classList.remove('reveal')
+	        $company3.classList.remove('back')
+	        $resp.classList.remove('blue')
+	    }
+	    if(scroll > 400 && scroll < 550){
+	    	$company3.classList.remove('der')
+	    	$company3.classList.add('back')
+	    	$text.classList.remove('chau')
+			$text2.classList.remove('chau')
+			$logo.classList.remove('left')
+			$port.classList.remove('apar')
+			$descr.classList.add('reveal')
+			
+	    }
+	     if(scroll > 600){
+	       	$company3.classList.add('der')
+	       	$text.classList.add('chau')
+			$text2.classList.add('chau')
+			$logo.classList.add('left')
+			$port.classList.add('apar')
+			$descr.classList.remove('reveal')
+	    }
+	    if (scroll> 900) {
+	    	$company3.classList.remove('chau')
+	    }
+	    if(scroll > 1000){
+			$port.classList.remove('apar')
+			$company3.classList.add('chau')
+			$company3.classList.remove('subava')
+				$portafolio.classList.remove('go')
+	    }
+	    if(scroll > 1100){
+			$port.classList.remove('apar')
+			$company3.classList.add('subava')
+			$portafolio.classList.add('go')
+			$proyect2.classList.add('remove')
+			$proyect3.classList.add('remove')
+			$proyect4.classList.add('remove')
+			$proyect5.classList.add('remove')
+			$proyect6.classList.add('remove')
+			$proyect1.classList.add('show')
+			$proyect1.classList.remove('remove')
+
+	    }
+	    if(scroll > 1200){
+			$proyect1.classList.remove('show')
+			$proyect1.classList.add('remove')
+			$proyect2.classList.remove('remove')
+			$proyect2.classList.add('show')
+	    }
+	    if(scroll > 1300){
+			$proyect2.classList.add('remove')
+			$proyect2.classList.remove('show')
+			$proyect3.classList.add('show')
+			$proyect3.classList.remove('remove')
+	    }
+	     if(scroll > 1400){
+			$proyect3.classList.add('remove')
+			$proyect3.classList.remove('show')
+			$proyect4.classList.add('show')
+			$proyect4.classList.remove('remove')
+	    }
+	     if(scroll > 1500){
+			$proyect4.classList.add('remove')
+			$proyect4.classList.remove('add')
+			$proyect5.classList.add('show')
+			$proyect5.classList.remove('remove')
+	    }
+	    if(scroll > 1600){
+			$proyect5.classList.add('remove')
+			$proyect5.classList.remove('show')
+			$proyect6.classList.add('show')
+			$proyect6.classList.remove('remove')
+			$footer.classList.remove('show')
+			$logo.classList.remove('chau')
+	    }
+	    if(scroll > 1700){
+	    	$proyect6.classList.add('remove')
+			$proyect6.classList.remove('show')
+			$footer.classList.add('show')
+			$logo.classList.add('chau')
+			$descr2.classList.add('ver')
+		}
+
+	    lastScrollTop = scroll
+	}
+	function listener(){
+		console.log(lastScrollTop)
+	}
+	var intervalo = setInterval('listener()',300);
+	</script>
+</body>
+
+</html>

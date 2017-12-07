@@ -1,0 +1,486 @@
+::-webkit-scrollbar { 
+    display: none; 
+}
+body{
+    	overflow-x: hidden;
+    	width: 80%;
+    	margin: 0 10%;
+    	height: 400vh;
+    }
+    .container{
+    	display: flex;
+    	align-items: center;
+    	height: 100vh;
+		width: 100%;
+    	}
+    	.red{
+    		width: 50%;
+    		height: 90%;
+    		background-color: #3f51b5;
+    		transition: 1s;
+    	}
+    	.red.blue{
+    		width: 80%;
+    		transition: 2s;
+    		position: fixed;
+    		height: 50%;
+    	}
+    	.text1{
+    		font-family: 'Catamaran', sans-serif;
+    		font-size: 90px;
+    		position: absolute;
+			right: 43%;
+			color: black;
+    		text-align: center;
+    		text-decoration: underline white;
+    		transition: 2s;
+    	}
+    	.punto{
+    		color: #3f51b5;
+    		font-size: 125px;
+    	}
+    	.punto.white{
+    		color: white;
+    		text-decoration: underline #3f51b5;
+    	}
+    	.text1.mov{
+    		right: -24%;
+    		transition: 2s;
+    		position: fixed;
+    	}
+
+    	.logo{
+    		font-size: 24px;
+    		color: #3f51b5;
+    		font-family: 'Nunito', sans-serif;
+    		position: absolute;
+    		top: 5%;
+    		right: 5%;
+    		transition: 2s;
+    	}
+    	.logo.up{
+			position: fixed;
+			font-size: 50px;
+			padding: 5px;
+			right: 30%;
+			transition: 2s;
+    	}
+
+    	.text2{
+    		font-family: 'Catamaran', sans-serif;
+    		font-size: 90px;
+    		position: absolute;
+			right:101%;			
+			color: black;
+    		text-align: center;
+    		text-decoration: underline white;
+    		transition: 1s;
+    	}
+    	.text2.mov{
+    		transition: 2s;
+    		right: 81%;
+    		position: fixed;
+    	}
+    	.descriptioncont{
+    		width: 300px;
+    		height: 200px;
+    		position: fixed;
+    		right: 38%;
+   			top: 35%;
+   			display: flex;
+   			flex-wrap: wrap;
+   		    justify-content: center;
+   		    align-items: center;
+   		    opacity: 0;
+    	}
+    	.descriptioncont img{
+    		width: 50px;
+    		margin: 0 15px;
+    	}
+    	.description{
+    		text-align: justify;
+    		color: white;
+    		font-size: 18px;
+   			font-family: 'Catamaran', sans-serif;
+   			transition: 1s;
+    	}
+    	.descriptioncont.reveal{
+		opacity: 1;
+		transition: 3s;
+    	}
+
+    	.red.blue.back{
+    		width: 80%;
+		    transition: 2s;
+		    position: fixed;
+		    height: 50%;
+		    right: 10%;
+		    transition: 1s;
+    	}
+
+    	.red.blue.der{
+    		width: 25%;
+		    transition: 2s;
+		    position: fixed;
+		    height: 70%;
+		    right: 10%;
+		    transition: 1s;
+    	}
+		
+		.text1.mov.chau, .text2.mov.chau{
+    		opacity: 0;
+    		transition: 1s;
+    	}
+
+    	.logo.up.left{
+			position: fixed;
+			font-size: 24px;
+			color: #3f51b5;
+			right: 70%;
+			transition: 2s;
+    	}
+    	.text1.port {
+    		opacity: 0;
+    		position: fixed;
+    		transition: 1.5s;
+            display: none;
+    	}
+    	.text1.port.apar {
+    		opacity: 1;
+    		position: fixed;
+    		transition: 2.5s;
+            display: block;
+    	}
+
+    	.red.blue.der.chau{
+			width: 80%;
+		    transition: 2s;
+		    position: fixed;
+		    height: 5%;
+		    right: 10%;
+		    top: 80%;
+		    transition: 1s;
+    	}
+    	.red.blue.der.chau.subava{
+			width: 80%;
+		    transition: 2s;
+		    position: fixed;
+		    height: 5%;
+		    right: 10%;
+		    top: 0%;
+		    opacity: 0;
+		    transition: 1s;
+    	}
+
+
+
+.portfolio img{
+   width: 60%;
+   opacity: .7;
+   transform: scale(0.9);
+}
+.portfolio h4{
+   font-size: 30px;
+   font-family: 'Nunito', sans-serif;
+    margin: 0;
+    color: #3f51b5;
+}
+.portfolio p{
+   font-size: 16px;
+   font-family: 'Catamaran', sans-serif;
+    margin: 0;
+}
+.portfolio{
+    display: flex;
+    width: 80%;
+    position: fixed;
+       bottom: 10%;
+    padding-bottom: 3%;
+    border-bottom: 8px solid  #3f51b5;
+    opacity: 0;
+    transition: 1s;
+    display: none;
+}
+.portfolio.go{
+    opacity: 1;
+    transition: 2s;
+    display: flex;
+}
+.proyecto, .proyecto2, .proyecto3, .proyecto4, .proyecto5, .proyecto6{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    opacity: 0;
+    transition: .5s;
+}
+.cont-desproyect{
+    margin-left: 20px;
+}
+    .img-proyect:hover{
+        opacity: 1;
+        transform: scale(1);
+        transition: .4s;
+        cursor: pointer;
+    }
+.twitter ,.fb, .insta{
+    z-index: 5;
+    opacity: .4;
+    transition: .5s;
+}
+.twitter:hover, .fb:hover, .insta:hover{
+    opacity: 1;
+}
+.proyecto.show, .proyecto2.show, .proyecto3.show, .proyecto4.show, .proyecto5.show, .proyecto6.show{
+    display: flex;
+    opacity: 1;
+}
+.proyecto.remove, .proyecto2.remove, .proyecto3.remove, .proyecto4.remove, .proyecto5.remove, .proyecto6.remove{
+    display: none;
+}
+
+footer{
+    display: flex;
+    opacity: 0;
+  background-color: #3f51b51c;
+  transition: .5s;
+}
+footer.show{   
+    opacity: 1;
+    position: fixed;
+    background-color: #3f51b5;
+    width: 90%;
+    height: 22%;
+    top: 0;
+    left: 0;
+transition: 1s;
+}
+.logo.up.left.chau{
+    display: none;
+}
+.logo.up.blanco{
+    color: white;
+}
+.caja{
+    position: fixed;
+    background-color: #3f51b5;
+    width: 10%;
+    height: 18.3%;
+    bottom: 0;
+    right: 0;
+}
+.contact{
+    position: fixed;
+    bottom: 0;
+    right: 20%;
+        color: #3f51b5;
+    font-size: 20px;
+       font-family: 'Nunito', sans-serif;
+}
+.descriptioncont.hola{
+    opacity: 1;
+    background-color: #673AB7;
+    padding: 1%;
+    display: none;
+}
+.descriptioncont.hola.ver{
+    display: block;
+}
+
+@media (max-width: 1000px){
+   .text1 {
+        right: 40%;
+   }
+   .text1.mov {
+    right: -33%;
+    }
+    .text2.mov {
+    right: 75%;
+    }
+    .descriptioncont{
+        right: 30%;
+    }
+    .logo.up{
+        font-size: 40px;
+    }
+    .portfolio {
+        bottom: 5%;
+    }
+    .portfolio img {
+    width: 100%;
+    height: 70%;
+    }
+    .portfolio.go{
+       height: 75%;
+    }
+    .contact {
+    bottom: 5%;
+    }
+}
+@media (max-width: 855px){
+   .text1, .text2 {
+           font-size: 75px;
+   }
+   .logo.up.left{
+    right: 60%;
+   }
+
+}
+@media (max-width: 682px){
+   .text1 {
+           right: 9%;
+   }
+   .logo.up {
+    right: 30%;
+    }
+   .text1, .text2 {
+           font-size: 60px;
+   }
+   .text1.mov {
+    right: -36%;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .descriptioncont {
+    right: 24%;
+    }
+    .text2.mov {
+    right: 73%;
+    }
+    .text1.port.apar{
+        right: 40%;
+    }
+    .logo.up.left {
+    right: 55%;
+    }
+}
+@media (max-width: 575px){
+    .logo.up {
+    right: 39%;
+    font-size: 30px;
+    }
+    .text1, .text2 {
+           font-size: 50px;
+   }
+   .descriptioncont.reveal {
+    width: 50%;
+    height: auto;
+    }
+    .logo.up.left {
+    right: 50%;
+    }
+    
+}
+@media (max-width: 500px){
+    .logo.up {
+    right: 20%;
+    font-size: 30px;
+    }
+    .logo.up.left {
+    right: 45%;
+    }
+    .portfolio p {
+    font-size: 13px;
+    }
+    .portfolio h4 {
+    font-size: 25px;
+    }
+    .descriptioncont img{
+            width: 30px;
+    }
+    .description.dosresp {
+    font-size: 15px;
+    width: 90%;
+    }
+    .descriptioncont.hola{
+        right: 5%;
+    }
+}
+@media (max-width: 450px){
+   .text1 {
+           right: 0%;
+            font-size: 65px;
+   }
+   .red {
+    width: 65%;
+    }
+     .resp{
+    color: white;
+   }
+   .text1.mov{
+    font-size: 50px;
+   }
+   .description {
+    font-size: 13px;
+    }
+    .descriptioncont.reveal img{
+            width: 30px;
+    }
+    .text1.mov {
+    right: -41%;
+    }
+    .descriptioncont.reveal {
+    right: 19%;
+    }
+    .text2.mov {
+    right: 69%;
+    }
+    .resp.blue{
+        color: #3f51b5;
+    }
+    .text1.port.apar{
+        font-size: 50px;
+    }
+    .logo.up.left {
+    right: 40%;
+    }
+    .contact{
+        right: 13%;
+    font-size: 17px;
+    }
+}
+@media (max-width: 375px){
+   .text1 {
+           right: 0%;
+            font-size: 55px;
+   }
+   .red {
+    width: 50%;
+    }
+  .logo.up {
+    right: 15%;
+    font-size: 25px;
+    }
+    .text1.mov {
+    right: -49%;
+    top: 43%;
+    }
+    .text2.mov {
+    right: 60%;
+    top: 56%;
+    }
+    .descriptioncont.reveal {
+    right: 23%;
+    top: 30%;
+    }
+    .text1.port.apar{
+        font-size: 40px;
+    }
+    .logo.up.left {
+    right: 23%;
+    }
+}
+@media (max-width: 320px){
+    .description {
+    font-size: 12px;
+    }
+    .descriptioncont.reveal img {
+    width: 23px;
+    }
+    .text1.mov {
+    right: -59%;
+    }
+    .text2.mov {
+    right: 55%;
+    }
+}
